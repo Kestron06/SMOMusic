@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
 	<title>SMOMusic</title>
 	<meta name="description" content="SMOMusic is an website that plays music from Super Mario Odyssey based on what time of day or night it is."/>
@@ -100,33 +100,34 @@
 </head>
 <body>
 	<div class="dropdown">
-	  <img src="toad.png" width="100px"><img src="clock.png" width='50px' id='pic'>
+	  <img src="toad.png" width="100" alt="Toad with headphones"><img src="clock.png" width='50' id='pic' alt="Clock">
 	  <h1>M O D E</h1>
 	  <div class="dropdown-content">
-	    <a onclick="time()"><img src="clock.png" width="15px">Time Mode (default)</a>
-	    <a onclick="voice()"><img src="crown.png" width="20px">Voice Mode</a>
-	    <a onclick="ominous()"><img src="bow.png" width="15px">Ominous Mode</a>
-	    <a onclick="manual()"><img src="manual.png" width="15px">Manual Mode</a>
+	    <a onclick="time()"><img src="clock.png" width="15" alt="Clock">Time Mode (default)</a>
+	    <a onclick="voice()"><img src="crown.png" width="20" alt="Crown">Voice Mode</a>
+	    <a onclick="ominous()"><img src="bow.png" width="15" alt="Bowser">Ominous Mode</a>
+	    <a onclick="manual()"><img src="manual.png" width="15" alt="Builder Mario">Manual Mode</a>
 	  </div>
 	</div>
 	<div class="volume">
-		<img src="fuzzy.gif" height="50px" id="f1" onclick="vol1()"><br>
-		<img src="fuzzy.gif" height="50px" id="f2" onclick="vol2()"><br>
-		<img src="fuzzy.gif" height="50px" id="f3" onclick="vol3()"><br>
-		<img src="fuzzy.gif" height="50px" id="f4" onclick="vol4()"><br>
-		<img src="fuzzy.gif" height="50px" id="f5" onclick="vol5()"><br>
-		<img src="fuzzy.gif" height="50px" id="f6" onclick="vol6()"><br>
-		<img src="fuzzy.gif" height="50px" id="f7" onclick="vol7()"><br>
-		<img src="fuzzy.gif" height="50px" id="f8" onclick="vol8()"><br>
-		<img src="fuzzy.gif" height="50px" id="f9" onclick="vol9()"><br>
-		<img src="fuzzy.gif" height="50px" id="f10" onclick="vol10()"><br><!--Shifted: voL!0-->
+		<img src="fuzzy.gif" height="50" id="f1" onclick="vol1()" alt="Fuzzy"><br>
+		<img src="fuzzy.gif" height="50" id="f2" onclick="vol2()" alt="Fuzzy"><br>
+		<img src="fuzzy.gif" height="50" id="f3" onclick="vol3()" alt="Fuzzy"><br>
+		<img src="fuzzy.gif" height="50" id="f4" onclick="vol4()" alt="Fuzzy"><br>
+		<img src="fuzzy.gif" height="50" id="f5" onclick="vol5()" alt="Fuzzy"><br>
+		<img src="fuzzy.gif" height="50" id="f6" onclick="vol6()" alt="Fuzzy"><br>
+		<img src="fuzzy.gif" height="50" id="f7" onclick="vol7()" alt="Fuzzy"><br>
+		<img src="fuzzy.gif" height="50" id="f8" onclick="vol8()" alt="Fuzzy"><br>
+		<img src="fuzzy.gif" height="50" id="f9" onclick="vol9()" alt="Fuzzy"><br>
+		<img src="fuzzy.gif" height="50" id="f10" onclick="vol10()" alt="Fuzzy"><br>
 	</div>
 	<div class="volume">
 		<h1><br><br><br>V<br>O<br>L<br>U<br>M<br>E</h1>
 	</div>
-	<img src="SMOMusicBanner.png">
+	<img src="SMOMusicBanner.png" alt="Banner Image">
 	<audio id="music">
 		<source src="https://docs.google.com/uc?export=download&id=1c-bwmLJJblY8Kot-ZuR-53VbOYI33qIF">
+		Error: Your browser can't handle audio tags.
 	</audio><br>
 	<br><h4 id="duration">0:00 / 0:00</h4>
 	<span id = "playpause"><input type="button" value="Begin!" id="btn" onclick="playBtn()"></span>
