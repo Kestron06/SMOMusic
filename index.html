@@ -96,6 +96,11 @@
 			position:absolute;
 			left:50%;
 		}
+		
+		body{
+			background-size:100%;
+			background-image:url("Phone.jpg");
+		}
 	</style>  
 </head>
 <body>
@@ -135,6 +140,19 @@
 	
 	
 	<script>
+		console.log(screen.width);
+		var phone=false;
+		function phoneCheck(){
+			if(screen.width<1000){
+				document.body.style.backgroundImage="url(Phone.jpg)";
+				phone=true;
+			}
+			else{
+				document.body.style.backgroundImage="url(Odyssey.jpg)";
+			}
+		}
+		phoneCheck();
+		var body=document.getElementsByTagName("body");
 		var mode="time";
 		var music=document.getElementById("music");
 		var pickFrom=[
@@ -144,6 +162,7 @@
 					hour:0,
 				},
 				source:'https://docs.google.com/uc?export=download&id=1kAoAwSzGWLLkPKGSNiuAmDu7WyUE8e7_',
+				back:'LakeKingdom.jpg',
 			},
 			{
 				start:{
@@ -151,6 +170,7 @@
 					hour:0,
 				},
 				source:'https://docs.google.com/uc?export=download&id=1gOZSAuAbPxOLsdQsqcYUGG6mdTFiNLTd',
+				back:'Odyssey.jpg',
 			},
 			{
 				start:{
@@ -158,6 +178,7 @@
 					hour:0,
 				},
 				source:'https://docs.google.com/uc?export=download&id=1ZpKFNf4tGRROF_wKOJzkSOsomjsG3v3I',
+				back:'MoonKingdom.jpg',
 			},
 			{
 				start:{
@@ -165,6 +186,7 @@
 					hour:1,
 				},
 				source:'https://docs.google.com/uc?export=download&id=1r8Vbt4E3UT1f9_KApr-MSyL47yfv7IxP',
+				back:'LakeKingdom.jpg',
 			},
 			{
 				start:{
@@ -172,6 +194,7 @@
 					hour:1,
 				},
 				source:'https://docs.google.com/uc?export=download&id=1dypm8SPPBdpoUteaHoHIEqlIz3c_9rDI',
+				back:'SandKingdom.jpg',
 			},
 			{
 				start:{
@@ -179,6 +202,7 @@
 					hour:2,
 				},
 				source:'https://docs.google.com/uc?export=download&id=1eSPDocxDFmQPfBuDjrytitFPJ0S2EOJ4',
+				back:'SandKingdom.jpg',
 			},
 			{
 				start:{
@@ -186,6 +210,7 @@
 					hour:2,
 				},
 				source:'https://docs.google.com/uc?export=download&id=1EodjK93iumyEZWhZlv4lpC8J6jO3BE7J',
+				back:'MoonKingdom.jpg',
 			},
 			{
 				start:{
@@ -193,6 +218,7 @@
 					hour:2,
 				},
 				source:'https://docs.google.com/uc?export=download&id=1mGO_wuv2rqtdtlt7_7yXrtM--0hNxmIU',
+				back:'SeasideKingdom.jpg',
 			},
 			{
 				start:{
@@ -200,6 +226,7 @@
 					hour:3,
 				},
 				source:'https://docs.google.com/uc?export=download&id=1_zGfA2vUeUIhCJTfLajuqpvEcSPVcoZ7',
+				back:'SeasideKingdom.jpg',
 			},
 			{
 				start:{
@@ -207,6 +234,7 @@
 					hour:3,
 				},
 				source:'https://docs.google.com/uc?export=download&id=1mAqYFKGvKRVLAdhLgcR2q_xZH4CDK5Gt',
+				back:'SandKingdom.jpg',
 			},
 			{
 				start:{
@@ -214,6 +242,7 @@
 					hour:4,
 				},
 				source:'https://docs.google.com/uc?export=download&id=1TUXDtNoM8zafH0GNwENs0v4qbvjpM466',
+				back:'SandKingdom.jpg',
 			},
 			{
 				start:{
@@ -221,6 +250,7 @@
 					hour:4,
 				},
 				source:'https://docs.google.com/uc?export=download&id=1tuTBZF8bAdDHh3NYoOTAt8hkiHKi17q_',
+				back:'BowsersKingdom.jpg',
 			},
 			{
 				start:{
@@ -228,6 +258,7 @@
 					hour:4,
 				},
 				source:'https://docs.google.com/uc?export=download&id=1dWH2dGY22uJe-e9ZaTtnqD3L-BwCJI6s',
+				back:'LostKingdom.jpg',
 			},
 			{
 				start:{
@@ -235,6 +266,7 @@
 					hour:5,
 				},
 				source:'https://docs.google.com/uc?export=download&id=127BqvNqdxAj3aML9hf3EvC6Nabuf1L3x',
+				back:'Odyssey.jpg',
 			},
 			{
 				start:{
@@ -242,6 +274,7 @@
 					hour:5,
 				},
 				source:'https://docs.google.com/uc?export=download&id=14qubTQDR1ePgN90j8U1UyzWur9eV6Bs5',
+				back:'LakeKingdom.jpg',
 			},
 			{
 				start:{
@@ -249,6 +282,7 @@
 					hour:6,
 				},
 				source:'https://docs.google.com/uc?export=download&id=1yZt0Re2si_R56461KHRhxeAeoI2INqdS',
+				back:'DarkSide.jpg',
 			},
 			{
 				start:{
@@ -256,6 +290,7 @@
 					hour:6,
 				},
 				source:'https://docs.google.com/uc?export=download&id=1h1x5-_dYLmz-K_ITzvX7od9WAnlEV9Y3',
+				back:'CapKingdom.jpg',
 			},
 			{
 				start:{
@@ -263,6 +298,7 @@
 					hour:6,
 				},
 				source:'https://docs.google.com/uc?export=download&id=1SMSXMivdKwywFfWKiLyc9EwCpkBpF_lZ',
+				back:'CascadeKingdom.jpg',
 			},
 			{
 				start:{
@@ -270,6 +306,7 @@
 					hour:7,
 				},
 				source:'https://docs.google.com/uc?export=download&id=1qRC2ynIP8rhltT2zExrmURUI4F67dtG3',
+				back:'Odyssey.jpg',
 			},
 			{
 				start:{
@@ -277,6 +314,7 @@
 					hour:7,
 				},
 				source:'https://docs.google.com/uc?export=download&id=1EodjK93iumyEZWhZlv4lpC8J6jO3BE7J',
+				back:'MoonKingdom.jpg',
 			},
 			{
 				start:{
@@ -284,6 +322,7 @@
 					hour:8,
 				},
 				source:'https://docs.google.com/uc?export=download&id=1Q2JR_VnNtwy7ebcWpItYGT06uAZhqces',
+				back:'CapKingdom.jpg',
 			},
 			{
 				start:{
@@ -291,6 +330,7 @@
 					hour:8,
 				},
 				source:'https://docs.google.com/uc?export=download&id=1iQ64H_L13J69JdWWCye4xBchT-0iki3B',
+				back:'MushroomKingdom.jpg',
 			},
 			{
 				start:{
@@ -298,6 +338,7 @@
 					hour:8,
 				},
 				source:'https://docs.google.com/uc?export=download&id=1sVTP1uMrDswxmJzhf8SuJnWxREAv3FSp',
+				back:'MetroKingdom.jpg',
 			},
 			{
 				start:{
@@ -305,6 +346,7 @@
 					hour:9,
 				},
 				source:'https://docs.google.com/uc?export=download&id=15Nufeq-wLqK7pHrCKGZxiJtkDVFswq88',
+				back:'WoodedKingdom.jpg',
 			},
 			{
 				start:{
@@ -312,6 +354,7 @@
 					hour:9,
 				},
 				source:'https://docs.google.com/uc?export=download&id=18zhFCSRcCSY5v4PM_x9FBod4T7wxa5ej',
+				back:'WoodedKingdom.jpg',
 			},
 			{
 				start:{
@@ -319,6 +362,7 @@
 					hour:10,
 				},
 				source:'https://docs.google.com/uc?export=download&id=1GrR4ywpBdGicRsdWaH5Iig0_yPOMjb2m',
+				back:'MetroKingdom.jpg',
 			},
 			{
 				start:{
@@ -326,6 +370,7 @@
 					hour:10,
 				},
 				source:'https://docs.google.com/uc?export=download&id=1UF0oglX8668bn-LQYh-p4TsfO-c5SBLg',
+				back:'CascadeKingdom.jpg',
 			},
 			{
 				start:{
@@ -333,6 +378,7 @@
 					hour:10,
 				},
 				source:'https://docs.google.com/uc?export=download&id=1g4zuSIlFEkDYrUHYeVaGDZzzWaLfpMvL',
+				back:'CascadeKingdom.jpg',
 			},
 			{
 				start:{
@@ -340,6 +386,7 @@
 					hour:11,
 				},
 				source:'https://docs.google.com/uc?export=download&id=1Usw0vVTSW9Z7gqfjNIQWGclOTT1GaRWV',
+				back:'Odyssey.jpg',
 			},
 			{
 				start:{
@@ -347,6 +394,7 @@
 					hour:11,
 				},
 				source:'https://docs.google.com/uc?export=download&id=11tT2Ph2v5AZG_XaYAHDfmUvy6ywX5-Pi',
+				back:'SnowKingdom.jpg',
 			},
 			{
 				start:{
@@ -354,13 +402,15 @@
 					hour:12,
 				},
 				source:'https://docs.google.com/uc?export=download&id=1fEEnfR5rk1sRnGaMufFoCnQ5gMb7nfeI',
+				back:'SnowKingdom.jpg',
 			},
 			{
 				start:{
-					min:24,//24
+					min:24,
 					hour:12,
 				},
 				source:'https://docs.google.com/uc?export=download&id=1ABXB-t29zgJ1uLkuHDpsONcx9k1GElP1',
+				back:'WoodedKingdom.jpg',
 			},
 			{
 				start:{
@@ -368,6 +418,7 @@
 					hour:12,
 				},
 				source:'https://docs.google.com/uc?export=download&id=1Di8Ndgq8vQCn0QhX0De9EpALo-akdw_X',
+				back:'SandKingdom.jpg',
 			},
 			{
 				start:{
@@ -375,27 +426,31 @@
 					hour:13,
 				},
 				source:'https://docs.google.com/uc?export=download&id=1KpUB74tbvowqM96_B8X34k5KD0mLDbsJ',
+				back:'SandKingdom.jpg',
 			},
 			{
 				start:{
-					min:36,//18
-					hour:13,//14
+					min:36,
+					hour:13,
 				},
 				source:'https://docs.google.com/uc?export=download&id=1K9nUOA-m64v_cl4OTXqyZak6kWe7kQ1d',
+				back:'LuncheonKingdom.jpg',
 			},
 			{
 				start:{
-					min:0,//00
-					hour:14,//14
+					min:0,
+					hour:14,
 				},
 				source:'https://docs.google.com/uc?export=download&id=1Px-J2219gSibH7Ohg-loU8hACwyMw4fi',
+				back:'LuncheonKingdom.jpg',
 			},
 			{
 				start:{
-					min:24,//52
-					hour:14,//13
+					min:24,
+					hour:14,
 				},
 				source:'https://docs.google.com/uc?export=download&id=16fleoY9W9A-9z7_0xbIXZKWzJGpt5UEV',
+				back:'LuncheonKingdom.jpg',
 			},
 			{
 				start:{
@@ -403,6 +458,7 @@
 					hour:14,
 				},
 				source:'https://docs.google.com/uc?export=download&id=144zgsU9iOsJLFYHe_w0EBZuM5oefi-bv',
+				back:'SandKingdom.jpg',
 			},
 			{
 				start:{
@@ -410,6 +466,7 @@
 					hour:15,
 				},
 				source:'https://docs.google.com/uc?export=download&id=1cWAqDNPoEr2koePKCD6k_LwIUNHwHLzm',
+				back:'SandKingdom.jpg',
 			},
 			{
 				start:{
@@ -417,6 +474,7 @@
 					hour:15,
 				},
 				source:'https://docs.google.com/uc?export=download&id=1xX8Q5-LHAXur2Ig8JJZdDvMteOoVwc3N',
+				back:'Odyssey.jpg',
 			},
 			{
 				start:{
@@ -424,6 +482,7 @@
 					hour:16,
 				},
 				source:'https://docs.google.com/uc?export=download&id=1B2NOKx40ZsqF3tTpzQdeDuxcQ5yxx9b9',
+				back:'Odyssey.jpg',
 			},
 			{
 				start:{
@@ -431,6 +490,7 @@
 					hour:16,
 				},
 				source:'https://docs.google.com/uc?export=download&id=1KOIb0AkpmQzU1cE8sG_fqu3okfNqJ0xk',
+				back:'Odyssey.jpg',
 			},
 			{
 				start:{
@@ -438,6 +498,7 @@
 					hour:16,
 				},
 				source:'https://docs.google.com/uc?export=download&id=1YMNd7D6WRpNc6NOFx2zEXldD7ZJzuiR9',
+				back:'Odyssey.jpg',
 			},
 			{
 				start:{
@@ -445,6 +506,7 @@
 					hour:17,
 				},
 				source:'https://docs.google.com/uc?export=download&id=1m3kERBGnqb837MTGn6xw_Law_rxZzRuB',
+				back:'Heroic.jpg',
 			},
 			{
 				start:{
@@ -452,6 +514,7 @@
 					hour:17,
 				},
 				source:'https://docs.google.com/uc?export=download&id=16430duKNRo1Hk-sjRARnlZSRG0EKpCZA',
+				back:'Odyssey.jpg',
 			},
 			{
 				start:{
@@ -459,6 +522,7 @@
 					hour:18,
 				},
 				source:'https://docs.google.com/uc?export=download&id=1tFRm-xzd4tphDB211jXLkC80xPKajhNZ',
+				back:'MetroKingdom.jpg',
 			},
 			{
 				start:{
@@ -466,6 +530,7 @@
 					hour:18,
 				},
 				source:'https://docs.google.com/uc?export=download&id=19zodf9YJ1Jae1wChta56RR_to0AKxHP6',
+				back:'MetroKingdom.jpg',
 			},
 			{
 				start:{
@@ -473,6 +538,7 @@
 					hour:18,
 				},
 				source:'https://docs.google.com/uc?export=download&id=17hrRORs4zbbnZfOzpG_NGHJMaFBkz0y8',
+				back:'MetroKingdom.jpg',
 			},
 			{
 				start:{
@@ -480,6 +546,7 @@
 					hour:19,
 				},
 				source:'https://docs.google.com/uc?export=download&id=10pBWTmBW6vnYCUAVvEr2uZYWxFan0wX6',
+				back:'Odyssey.jpg',
 			},
 			{
 				start:{
@@ -487,6 +554,7 @@
 					hour:19,
 				},
 				source:'https://docs.google.com/uc?export=download&id=1xPakBMKfSxXK7MfuUapVof6xl-XBon-G',
+				back:'MetroKingdom.jpg',
 			},
 			{
 				start:{
@@ -494,6 +562,7 @@
 					hour:20,
 				},
 				source:'https://docs.google.com/uc?export=download&id=10X1_54kwPaIkiCeZMXCx9Fpy2hffvLkz',
+				back:'MoonKingdom.jpg',
 			},
 			{
 				start:{
@@ -501,6 +570,7 @@
 					hour:20,
 				},
 				source:'https://docs.google.com/uc?export=download&id=1Zh9gyf0LLqRXFK_2VNpTVcmYORmKTlRj',
+				back:'MetroKingdom.jpg',
 			},
 			{
 				start:{
@@ -508,6 +578,7 @@
 					hour:20,
 				},
 				source:'https://docs.google.com/uc?export=download&id=1YV26YHg_QiGkURuoy28UuY6lUqDTJonH',
+				back:'Odyssey.jpg',
 			},
 			{
 				start:{
@@ -515,6 +586,7 @@
 					hour:21,
 				},
 				source:'https://docs.google.com/uc?export=download&id=11_SOFzWCtUeX8TmwdAb6QrSbYrSb7vIS',
+				back:'SnowKingdom.jpg',
 			},
 			{
 				start:{
@@ -522,6 +594,7 @@
 					hour:21,
 				},
 				source:'https://docs.google.com/uc?export=download&id=127BqvNqdxAj3aML9hf3EvC6Nabuf1L3x',
+				back:'SandKingdom.jpg',
 			},
 			{
 				start:{
@@ -529,6 +602,7 @@
 					hour:22,
 				},
 				source:'https://docs.google.com/uc?export=download&id=1OBUmiXvTKsxHZjKriExEEcA_Fx3lFJCx',
+				back:'LakeKingdom.jpg',
 			},
 			{
 				start:{
@@ -536,6 +610,7 @@
 					hour:22,
 				},
 				source:'https://docs.google.com/uc?export=download&id=14qubTQDR1ePgN90j8U1UyzWur9eV6Bs5',
+				back:'LakeKingdom.jpg',
 			},
 			{
 				start:{
@@ -543,6 +618,7 @@
 					hour:22,
 				},
 				source:'https://docs.google.com/uc?export=download&id=1IqmXHxv0wGKb7735nfHgzPy7BHKGIHF3',
+				back:'LostKingdom.jpg',
 			},
 			{
 				start:{
@@ -550,6 +626,7 @@
 					hour:23,
 				},
 				source:'https://docs.google.com/uc?export=download&id=1RHy2ZgIV9ogDWdODmXdb_ETphxPdgN5T',
+				back:'BowsersKingdom.jpg',
 			},
 			{
 				start:{
@@ -557,6 +634,7 @@
 					hour:23,
 				},
 				source:'https://docs.google.com/uc?export=download&id=1ObwDR2xSb0kcyIR_TaZM2H1HPq24PK2G',
+				back:'SeasideKingdom.jpg',
 			},
 		];
 		var creepers=[
@@ -897,10 +975,6 @@
 				title:'Climactic Duel',
 				source:'https://docs.google.com/uc?export=download&id=1qRC2ynIP8rhltT2zExrmURUI4F67dtG3',
 			},
-			{
-				title:'Lullaby until the end',
-				source:'https://docs.google.com/uc?export=download&id=1yZt0Re2si_R56461KHRhxeAeoI2INqdS',
-			},
 		];
 		
 		var possibleSources=[];
@@ -910,6 +984,7 @@
 		var delay=0;
 		var creep=0;
 		var dur=document.getElementById("duration");
+		var theThing=0;
 		function pickMusic(){
 			var now=new Date();
 			//getHours() getMinutes() getSeconds()
@@ -918,14 +993,16 @@
 					music.src=pickFrom[i].source;
 					music.play();
 					foundOne=true;
-					i=pickFrom.length;
+					theThing=i;
 				}
 				else if(pickFrom[i].start.hour<=now.getHours()&&!foundOne){
 					if(pickFrom[i].start.hour===now.getHours()&&pickFrom[i].start.min<=now.getMinutes()){
 						possibleSources.push(pickFrom[i].source);
+						theThing=i;
 					}
 					else if(pickFrom[i].start.hour<now.getHours()){
 						possibleSources.push(pickFrom[i].source);
+						theThing=i;
 					}
 				}
 			}
@@ -935,7 +1012,10 @@
 				foundOne=true;
 			}
 			dur=document.getElementById("duration");
-			
+			var thingy=pickFrom[theThing].back;
+			if(!phone){
+				document.body.style.backgroundImage = "url(" + thingy + ")";
+			}
 			var timing=music.currentTime;
 			var timingMins=0;
 			while(Math.round(timing)>=60){
@@ -1002,17 +1082,21 @@
 			if(mode==="time"){
 				t=window.setInterval(pickMusic,1000);
 				foundOne=false;
+				document.body.style.backgroundImage = "url(Odyssey.jpg)";
 			}
 			else if(mode==="voice"){
 				t=window.setInterval(playVoice,1000);
+				document.body.style.backgroundImage = "url(Festival.jpg)";
 			}
 			else if(mode==="ominous"){
 				t=window.setInterval(creepy,1000);
+				document.body.style.backgroundImage = "url(Creepy.jpg)";
 			}
 			if(mode!=="manual"){
 				music.play();
 				PP.innerHTML="<input type = 'button' id = 'playpause' value='Stop' onclick='pauseBtn()'>";
 			}
+			phoneCheck();
 		}
 		function pauseBtn(){
 			clearInterval(t);
@@ -1153,6 +1237,9 @@
 		}
 		var clearable=document.getElementById("clear");
 		function time(){
+			if(!phone){
+				document.body.style.backgroundImage = "url(Odyssey.jpg)";
+			}
 			document.getElementById("pic").src="clock.png";
 			mode="time";
 			pauseBtn();
@@ -1161,6 +1248,9 @@
 			clear.innerHTML="";
 		}
 		function voice(){
+			if(!phone){
+				document.body.style.backgroundImage = "url(Festival.jpg)";
+			}
 			document.getElementById("pic").src="crown.png";
 			mode="voice";
 			pauseBtn();
@@ -1168,6 +1258,9 @@
 			clear.innerHTML="";
 		}
 		function ominous(){
+			if(!phone){
+				document.body.style.backgroundImage = "url(Creepy.jpg)";
+			}
 			document.getElementById("pic").src="bow.png";
 			mode="ominous";
 			pauseBtn();
@@ -1175,6 +1268,9 @@
 			clear.innerHTML="";
 		}
 		function manual(){
+			if(!phone){
+				document.body.style.backgroundImage = "url(black.jpg)";
+			}
 			document.getElementById("pic").src="manual.png";
 			mode="manual";
 			pauseBtn();
