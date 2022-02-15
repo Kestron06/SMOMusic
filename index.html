@@ -1023,7 +1023,7 @@
 				timing-=60;
 			}
 			var dispTime=""+Math.round(timing);
-			if(timing<10){
+			if(Math.round(timing)<10){
 				dispTime="0"+Math.round(dispTime);
 			}
 			dur.innerHTML=timingMins+":"+dispTime+" / 24:00";
@@ -1048,7 +1048,7 @@
 				timing-=60;
 			}
 			var dispTime=""+Math.round(timing);
-			if(timing<10){
+			if(Math.round(timing)<10){
 				dispTime="0"+Math.round(dispTime);
 			}
 			dur.innerHTML=timingMins+":"+dispTime+" / 5:00";
@@ -1072,7 +1072,7 @@
 				timing-=60;
 			}
 			var dispTime=""+Math.round(timing);
-			if(timing<10){
+			if(Math.round(timing)<10){
 				dispTime="0"+Math.round(dispTime);
 			}
 			dur.innerHTML=timingMins+":"+dispTime+" / 5:00";
