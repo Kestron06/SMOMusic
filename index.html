@@ -14,7 +14,7 @@
       "url": "https://www.SMOMusic.github.io",
       "datePublished": "2022-2-12",
       "dateCreated": "2022-2-1",
-      "dateModified": "2022-2-13",
+      "dateModified": "2022-2-16",
       "publisher": "Kestron",
       "author": {
         "@type": "Person",
@@ -100,6 +100,7 @@
 		body{
 			background-size:100%;
 			background-image:url("Phone.jpg");
+			text-shadow: 2px 2px 2px rgb(0,0,0);
 		}
 	</style>  
 </head>
@@ -143,13 +144,12 @@
 		console.log(screen.width);
 		var phone=false;
 		function phoneCheck(){
-			phone=false;
 			if(screen.width<1000){
 				document.body.style.backgroundImage="url(Phone.jpg)";
 				phone=true;
 			}
 			else{
-				//document.body.style.backgroundImage="url(Odyssey.jpg)";
+				document.body.style.backgroundImage="url(Odyssey.jpg)";
 			}
 		}
 		phoneCheck();
@@ -1024,7 +1024,7 @@
 				timing-=60;
 			}
 			var dispTime=""+Math.round(timing);
-			if(Math.round(timing)<10){
+			if(timing<10){
 				dispTime="0"+Math.round(dispTime);
 			}
 			dur.innerHTML=timingMins+":"+dispTime+" / 24:00";
@@ -1049,7 +1049,7 @@
 				timing-=60;
 			}
 			var dispTime=""+Math.round(timing);
-			if(Math.round(timing)<10){
+			if(timing<10){
 				dispTime="0"+Math.round(dispTime);
 			}
 			dur.innerHTML=timingMins+":"+dispTime+" / 5:00";
@@ -1073,7 +1073,7 @@
 				timing-=60;
 			}
 			var dispTime=""+Math.round(timing);
-			if(Math.round(timing)<10){
+			if(timing<10){
 				dispTime="0"+Math.round(dispTime);
 			}
 			dur.innerHTML=timingMins+":"+dispTime+" / 5:00";
