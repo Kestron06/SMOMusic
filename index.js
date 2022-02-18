@@ -1,4 +1,3 @@
-console.log(screen.width);
 var phone=false;
 function phoneCheck(){
 	if(screen.width<1000){
