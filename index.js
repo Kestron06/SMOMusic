@@ -928,7 +928,18 @@ var delay=0;
 var creep=0;
 var dur=document.getElementById("duration");
 var theThing=0;
+var headset=0;
 function pickMusic(){
+	var now=new Date();
+	//getHours() getMinutes() getSeconds()
+	if(music.paused){
+		headset++;
+		if(headset>pickFrom.length-1){
+			headset=0;
+		}
+		music.src=pickFrom[headset].source;
+		music.play();
+	}
 	var now=new Date();
 	//getHours() getMinutes() getSeconds()
 	for(var i=0;i<pickFrom.length;i++){
